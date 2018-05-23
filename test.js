@@ -14,10 +14,10 @@ myCar.drive();
 var myCar2 = {
   maxSpeed: 70,
   driver: "Paul",
-  drive: function() {
-    console.log("now driving again");
+  drive: function(speed, time) {
+    console.log(speed * time);
   }
 };
 
 console.log(myCar2.maxSpeed);
-myCar2.drive();
+myCar2.drive(50, 3);
