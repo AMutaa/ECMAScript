@@ -1,12 +1,6 @@
-var birthday = new Date(1994, 10, 08, 11, 15, 25);
-var birthday2 = new Date(1994, 10, 08, 11, 15, 25);
+var firstName = prompt("What is your first name?");
+var lastName = prompt("What is your last name?");
+var age = prompt("How old are you?");
 
-console.log(birthday.getFullYear());
-console.log(birthday.getDay());
-console.log(birthday.getTime());
-
-if (birthday.getTime() == birthday2.getTime()) {
-  console.log("birthdays are equal");
-} else {
-  console.log("birthdays are not equal");
-}
+console.log("Your full name is " + firstName + " " + lastName);
+console.log("You are " + age + " years old");
