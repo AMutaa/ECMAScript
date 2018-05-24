@@ -1,10 +1,10 @@
 var secretNumber = 23;
 
-var guess = prompt("Guess my age!");
+var guess = Number(prompt("Guess my age!"));
 
-if (Number(guess) === secretNumber) {
+if (guess === secretNumber) {
  alert("You guessed it!");
-} else if (Number(guess) > secretNumber) {
+} else if (guess > secretNumber) {
  alert("Too high, take another shot");
 } else {
  alert("Too low, take another shot!");
