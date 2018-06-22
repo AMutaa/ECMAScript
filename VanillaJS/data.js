@@ -188,3 +188,16 @@ const SmsSampleData = {
   },
  ],
 };
+
+// returns an object
+console.log(SmsSampleData);
+
+// returns an array of 6 items
+
+console.log(SmsSampleData.results);
+
+
+// save alll results in a variable
+
+var examples = SmsSampleData.results
+console.log(examples);
