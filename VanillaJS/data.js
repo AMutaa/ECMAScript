@@ -196,20 +196,28 @@ console.log(SmsSampleData);
 
 console.log(SmsSampleData.results);
 
-
 // save all results in a variable and print
 
 var examples = SmsSampleData.results
 console.log(examples);
 
-// print out the item at index 2 in the array
-console.log(examples[2]);
+
+// print out all arrays
+for (var i = 0; i <= examples.length; i++) {
+ console.log(examples);
+}
 
 
-// create an object
+//create an object
 var ObjectTwo = examples[2];
 console.log(ObjectTwo);
 
 // return each key and values in objectTwo
 console.log(Object.keys(ObjectTwo));
 console.log(Object.values(ObjectTwo));
+
+console.log(ObjectTwo.smsHeader);
+
+for (var i = 0; i < examples.length; i++) {
+ console.log(examples[i].smsHeader);
+}
