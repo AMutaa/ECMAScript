@@ -215,9 +215,25 @@ console.log(ObjectTwo);
 // return each key and values in objectTwo
 console.log(Object.keys(ObjectTwo));
 console.log(Object.values(ObjectTwo));
-
 console.log(ObjectTwo.smsHeader);
+
+
+// attack the array of objects and print out each sms Header
 
 for (var i = 0; i < examples.length; i++) {
  console.log(examples[i].smsHeader);
 }
+
+// attack the array of objects and print out each keyword
+
+for (var i = 0; i < examples.length; i++) {
+ console.log(examples[i].keyword);
+}
+
+// Print out Card Template Labels
+
+var cardTemplates = [];
+for (var i = 0; i < examples.length; i++) {
+ cardTemplates.push(examples[i].cardTemplate);
+}
+console.log(cardTemplates);
