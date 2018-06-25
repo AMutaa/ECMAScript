@@ -210,20 +210,29 @@ console.log(examples);
 
 // attack the array of objects and print out each sms Header
 
-for (var i = 0; i < examples.length; i++) {
-  console.log(examples[i].smsHeader);
-}
+examples.forEach(function(examples) {
+  console.log(examples.smsHeader);
+});
 
 // attack the array of objects and print out each keyword
 
-for (var i = 0; i < examples.length; i++) {
-  console.log(examples[i].keyword);
-}
+examples.forEach(function(examples) {
+  console.log(examples.keyword);
+});
 
-// Print out Card Template Labels
+//  Print out Card Template Labels
+var templatez = [];
+examples.forEach(function(examples) {
+  templatez.push(examples.cardTemplate);
+});
+console.log(templatez);
 
-var cardTemplates = [];
-for (var i = 0; i < examples.length; i++) {
-  cardTemplates.push(examples[i].cardTemplate);
+// Nested For Loop
+
+let rows = templatez.length;
+for (var i = 0; i < rows; i++) {
+  let items = templatez[i].length;
+  for (var j = 0; j < items; j++) {
+    console.log(templatez[i]);
+  }
 }
-console.log(cardTemplates);
