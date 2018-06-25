@@ -200,6 +200,7 @@ const arrayed = [...items, 'watermelon'];
 const logger = arrayed.map((item, idx) => {
   console.log(`I ate a ${item}`);
 })
+
 console.log("Arrayed", arrayed);
 console.log()
 
