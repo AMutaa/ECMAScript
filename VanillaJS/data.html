@@ -11,7 +11,30 @@
 </head>
 
 <body>
-
+ <div class="container">
+  <div class=" iter date"></div>
+  <div class=" iter trex"></div>
+  <div class=" iter tred"></div>
+  <div class=" iter tref"></div>
+ </div>
 </body>
+
+<style>
+ * {
+  box-sizing: border-box;
+ }
+
+ body {
+  background-color: bisque
+ }
+
+ .container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3;
+
+ }
+</style>
 
 </html>

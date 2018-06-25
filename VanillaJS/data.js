@@ -1,10 +1,8 @@
 const SmsSampleData = {
   response: "sucess",
-  results: [
-    {
+  results: [{
       smsHeader: "Tom's Urban",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Beese Churger",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -19,8 +17,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplateData: [
-        {
+      cardTemplateData: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -36,8 +33,7 @@ const SmsSampleData = {
     },
     {
       smsHeader: "Tom's Urban",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Quadruple Wrap",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -52,8 +48,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplate: [
-        {
+      cardTemplate: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -69,8 +64,7 @@ const SmsSampleData = {
     },
     {
       smsHeader: "Express Man",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Baconator",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -85,8 +79,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplate: [
-        {
+      cardTemplate: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -102,8 +95,7 @@ const SmsSampleData = {
     },
     {
       smsHeader: "Tom's Urban",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Cheetos Quesadilla",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -118,8 +110,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplate: [
-        {
+      cardTemplate: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -135,8 +126,7 @@ const SmsSampleData = {
     },
     {
       smsHeader: "Tom's Urban",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Wrapant",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -151,8 +141,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplate: [
-        {
+      cardTemplate: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -168,8 +157,7 @@ const SmsSampleData = {
     },
     {
       smsHeader: "Tom's Urban",
-      smsFooter:
-        "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
+      smsFooter: "Msg & Data rates may apply Txt STOP to stop, HELP for help Pwrd by Paytronix",
       keyword: "Run away Burger",
       connectivityErrorMsg: "Server error, please try again later",
       unsupportedErrorMsg: "Sorry that functionality is not enabled",
@@ -184,8 +172,7 @@ const SmsSampleData = {
       enrollmentEmailReplyTo: "EnterenrollmentEmailReplyTo",
       textForEnrollment: "No free food for you and your friends  at Taco Sub",
       selectedCardTemplateCode: 1,
-      cardTemplate: [
-        {
+      cardTemplate: [{
           cardTemplateCode: 1,
           cardTemplateLabel: "Loyalty"
         },
@@ -210,29 +197,43 @@ console.log(examples);
 
 // attack the array of objects and print out each sms Header
 
-examples.forEach(function(examples) {
+examples.forEach(function (examples) {
   console.log(examples.smsHeader);
 });
 
 // attack the array of objects and print out each keyword
 
-examples.forEach(function(examples) {
+examples.forEach(function (examples) {
   console.log(examples.keyword);
 });
 
 //  Print out Card Template Labels
 var templatez = [];
-examples.forEach(function(examples) {
+examples.forEach(function (examples) {
   templatez.push(examples.cardTemplate);
 });
 console.log(templatez);
 
-// Nested For Loop
+// // Nested For Loop
+// let rows = templatez.length
+// for (var i = 0; i < rows; i++) {
+//   for (var j = 0; j < templatez[i].length; j++) {
+//     console.log(templatez[i]);
+//   }
+// }
 
-let rows = templatez.length;
-for (var i = 0; i < rows; i++) {
-  let items = templatez[i].length;
-  for (var j = 0; j < items; j++) {
-    console.log(templatez[i]);
-  }
+var today = new Date();
+var year = today.getFullYear();
+var est = new Date('Apr 16, 1996 15:45:55');
+var difference = today.getTime() - est.getTime();
+difference = (difference / 31556900000);
+
+console.log(Math.floor(difference) + ' years of online travel advice')
+
+var i = 1;
+var msg = '';
+
+while (i < 10) {
+  msg += i + ' x 5 = ' + (i * 5) + '<br />';
+  i++;
 }
