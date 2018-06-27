@@ -33,16 +33,38 @@
 
   <script>
     // Select all the list items on the page and convert to array
-    const Video = Array.from(document.querySelectorAll('[data-time]'));
+    const video = Array.from(document.querySelectorAll('[data-time]'));
+
+
     // Filter for only the elements that contain the word 'flexbox'
 
-    // map down to a list of time strings
+    const flex = video.filter(video => video.textContent.includes('Flexbox'))
 
-    // map to an array of seconds
+      // const flex = video.filter(function (video) {
+      //   return video.textContent.includes('Flexbox');
+      // })
 
-    // reduce to get total
+
+
+      // map down to a list of time strings
+
+      .map(video => video.dataset.time)
+
+      // map to an array of seconds
+
+      .map(timecode => {
+        const parts = timecode.split(':').map(part => parseFloat(part));
+        return parts[0] * 60 + parts[1];
+      })
+
+
+      // reduce to get total
+
+      .reduce((runningTotal, seconds) => runningTotal + seconds, 0)
 
     // 🔥 This can also be done in a single .reduce(), but we're practicing arrow functions here, so chain them!
+
+    console.log(flex);
   </script>
 </body>
 
