@@ -67,11 +67,11 @@
 
 
   let mapFilterAndReduce = (arr) => arr.map(val => val.firstName).filter(val => val.length < 5).reduce((acc, next) => {
-   acc[next] = next.length,
-    return acc
+   acc[next] = next.length
+   return acc;
   }, {});
 
-  createStudentObj('Elie', 'Schoppik') // {firstName: 'Elie', lastName: 'Schoppik'}
+  // createStudentObj('Elie', 'Schoppik') // {firstName: 'Elie', lastName: 'Schoppik'}
 
 
   let createStudentObj = (firstName, lastName) => ({
