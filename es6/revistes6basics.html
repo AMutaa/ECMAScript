@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Revisit es6 basics</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+
+ <script>
+  // var instructor = {
+  //  firstName: "Ellie",
+  //  sayHi: function () {
+  //   setTimeout(function () {
+  //    console.log("Hello " + this.firstName);
+  //   }.bind(this), 1000);
+  //  }
+  // }
+
+  // Arrow function
+
+  var instructor = {
+   firstName: "Ellie",
+   sayHi: function () {
+    setTimeout(() => {
+     console.log("Hello " + this.firstName);
+    }, 1000);
+   }
+  }
+ </script>
+</body>
+
+</html>
