@@ -25,7 +25,7 @@
 
   // Arrow function
 
-  var instructor = {
+  const instructor = {
    firstName: "Ellie",
    sayHi: function () {
     setTimeout(() => {
@@ -35,6 +35,7 @@
   }
 
 
+
   // function tripleAndFilter(arr){
   //    return arr.map(function(value){
   //      return value * 3;
@@ -42,7 +43,7 @@
   //      return value % 5 === 0;
   //    })
   //  }
-  let tripleAndFilter = arr => arr.map(val => val * 3).filter(val => val % 5 === 0);
+  // let tripleAndFilter = arr => arr.map(val => val * 3).filter(val => val % 5 === 0);
 
   // function doubleOddNumbers(arr) {
   //  return arr.filter(function (val) {
@@ -52,7 +53,7 @@
   //  })
   // }
 
-  let doubleOddNumbers = arr => arr.filter(val => val % 2 !== 0).map(val * 2);
+  // let doubleOddNumbers = arr => arr.filter(val => val % 2 !== 0).map(val * 2);
 
   // function mapFilterAndReduce(arr) {
   //  return arr.map(function (val) {
@@ -66,18 +67,18 @@
   // }
 
 
-  let mapFilterAndReduce = (arr) => arr.map(val => val.firstName).filter(val => val.length < 5).reduce((acc, next) => {
-   acc[next] = next.length
-   return acc;
-  }, {});
+  // let mapFilterAndReduce = (arr) => arr.map(val => val.firstName).filter(val => val.length < 5).reduce((acc, next) => {
+  //  acc[next] = next.length
+  //  return acc;
+  // }, {});
 
-  // createStudentObj('Elie', 'Schoppik') // {firstName: 'Elie', lastName: 'Schoppik'}
+  // // createStudentObj('Elie', 'Schoppik') // {firstName: 'Elie', lastName: 'Schoppik'}
 
 
-  let createStudentObj = (firstName, lastName) => ({
-   firstName: firstName,
-   lastName: lastName
-  });
+  // let createStudentObj = (firstName, lastName) => ({
+  //  firstName: firstName,
+  //  lastName: lastName
+  // });
  </script>
 </body>
 
