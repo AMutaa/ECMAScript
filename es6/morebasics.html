@@ -11,18 +11,24 @@
 
 <body>
  <script>
+  // spread operator
   const team = ['Lloris', 'Griezman', 'Pogba', 'Giroud', 'Varane'];
-
   const [captain, forward, ...squad] = team;
-
   console.log(squad);
 
-
+  // split
   const data = 'Basketball,Sports,90210,23';
-
   const [itemName, category, sku, inventory] = data.split(',');
-
   console.log(itemName, category, sku, inventory);
+
+
+
+  // for of ----- you can break or continue
+
+  const cuts = ['Chuck', 'Brisket', 'Shank', 'Short Rib'];
+  for (const cut of cuts) {
+   console.log(cut);
+  }
  </script>
 </body>
 
