@@ -21,6 +21,12 @@
  <p>Hi I'm p 09</p>
  <p>Hi I'm p 10</p>
 
+ <div class="people">
+  <p>Adam</p>
+  <p>Andrew</p>
+  <p>Muta</p>
+ </div>
+
 
 
 
@@ -60,6 +66,20 @@
     console.log(this.textContent)
    });
   }
+
+  // Array.from
+
+  const people = document.querySelectorAll('.people p')
+  const peopleArray = Array.from(people, person => {
+   console.log(person);
+   return person.textContent;
+  });
+  console.log(peopleArray)
+
+  // Array.of
+
+  const ages = Array.of(12, 4, 23, 62, 34);
+  console.log(ages);
  </script>
 </body>
 
