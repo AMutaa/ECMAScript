@@ -78,16 +78,28 @@
 
   // Array.of
 
-  const ages = Array.of(12, 4, 23, 62, 34);
-  console.log(ages);
+  // const ages = Array.of(12, 4, 23, 62, 34);
+  // console.log(ages);
 
 
-  // Array.find() & .findIndex()
+  // // Array.find() & .findIndex()
 
-  const code = 'VBgtGQcSf'
-  const post = posts.find(post => post.code === code);
-  const postIndex = posts.findIndex(post => post.code === code);
-  console.log(postIndex);
+  // const code = 'VBgtGQcSf'
+  // const post = posts.find(post => post.code === code);
+  // const postIndex = posts.findIndex(post => post.code === code);
+  // console.log(postIndex);
+
+
+  // Array.some() & .every()
+  const ages = [32, 15, 19, 12];
+
+  // 👵👨 is there at least one adult in the group?
+  const adultPresent = ages.some(age => age >= 18);
+  console.log(adultPresent);
+
+  // 🍻 is everyone old enough to drink?
+  const allOldEnough = ages.every(age => age >= 19);
+  console.log(allOldEnough);
  </script>
 
 
