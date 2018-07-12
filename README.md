@@ -1,2 +1,2 @@
-# ECMAScript
-Basic Javascript Concepts
+# JS Review
+
